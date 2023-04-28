@@ -1,8 +1,8 @@
 ---
 ## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+title: "Отчёт по первому этапу выполнения самостоятельного проекта"
+subtitle: ""
+author: "Смирнов-Мальцев Егор Дмитриевич"
 
 ## Generic otions
 lang: ru-RU
@@ -13,10 +13,7 @@ bibliography: bib/cite.bib
 csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 
 ## Pdf output format
-toc: true # Table of contents
 toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
 fontsize: 12pt
 linestretch: 1.5
 papersize: a4
@@ -56,7 +53,6 @@ figureTitle: "Рис."
 tableTitle: "Таблица"
 listingTitle: "Листинг"
 lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
 lolTitle: "Листинги"
 ## Misc options
 indent: true
@@ -68,52 +64,98 @@ header-includes:
 
 # Цель работы
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
-
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+* Научиться создавать сайты по шаблону.
 
 # Задание
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+* Создать сайт с помощью hugo по шаблону данному в описании работы.
 
-# Теоретическое введение
+# Выполнение первого этапа самостоятельного проекта
 
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
+1. Скачал последнюю версию hugo с github.(рис. 1)
 
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
+<figure>![hugorel](image/hugorel.png "рис. 1. Репозиторий с последней версией hugo")
+	<img src="image/hugorel.png" alt="Установка git-flow">
+	<figcaption>рис. 1. Репозиторий с последней версией hugo</figcaption>
+<figure>
 
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
+2. Создал на github репозиторий с именем blog по шаблону указанному в задании.(рис. 2)
 
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
+<figure>![crrep](image/crrep.png "рис. 2. Страница создания репозитория на github")
+	<img src="image/crrep.png" alt="Установка git-flow">
+	<figcaption>рис. 2. Страница создания репозитория на github</figcaption>
+<figure>
 
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
+3. Клонировал репозиторий на свой компьютер.(рис. 3)
 
-# Выполнение лабораторной работы
+<figure>![clonerep](image/clonerep.png "рис. 3. Клонирование репозитория с Github")
+	<img src="image/clonerep.png" alt="Установка git-flow">
+	<figcaption>рис. 3. Клонирование репозитория с Github</figcaption>
+<figure>
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
+4. Запустил hugo в локальном репозитории.(рис. 4)
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+<figure>![mountains](image/hugoblog.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 4. Запуск hugo.</figcaption>
+<figure>
+
+5. Удалил public из папки blog.(рис. 5)
+
+<figure>![mountains](image/rmpublic.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 5. Удаление public.</figcaption>
+<figure>
+
+6. Запустил hugo server и создал сайт на локальном хосте.(рис. 6)
+
+<figure>![mountains](image/hugoserver.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 6. Создание сайта на локальном хосте.</figcaption>
+<figure>
+
+7. Удалил лишнюю часть сайта.(рис. 7)
+
+<figure>![mountains](image/rmdemo.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 7. Удаление файла demo.md.</figcaption>
+<figure>
+
+8. Создал репозиторий для общедоступного сайта.(рис. 8)
+
+<figure>![mountains](image/crrepforsite.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 8. Создание репозитория для общедоступного сайта.</figcaption>
+<figure>
+
+9. Создал ветку main и отправил изменения на github.(рис. 9)
+
+<figure>![mountains](image/crmain.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 9. Создание ветки main.</figcaption>
+<figure>
+
+10. Подключил репозиторий для сайта к папке public из blog.(рис. 10)
+
+<figure>![mountains](image/submodule.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 10. Подключение папки public.</figcaption>
+<figure>
+
+11. Добавил в public файлы с помощью hugo.(рис. 11)
+
+<figure>![mountains](image/hugopublic.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 11. Заполнение папки public.</figcaption>
+<figure>
+
+12. Добавил изменения в public на репозиторий на github.(рис. 12)
+
+<figure>![mountains](image/mkcommit.png "Пейзаж с горами")
+	<img src="image/instgitflow.png" alt="Установка git-flow">
+	<figcaption>рис. 12. Создание коммита с измениями в public.</figcaption>
+<figure>
 
 # Выводы
 
-Здесь кратко описываются итоги проделанной работы.
-
-# Список литературы{.unnumbered}
-
-::: {#refs}
-:::
+* Я создал сайт по шаблону.
