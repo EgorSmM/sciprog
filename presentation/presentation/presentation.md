@@ -1,46 +1,31 @@
 ---
-## Front matter
-lang: ru-RU
-title: Групповой проект Хищник-жертва
-subtitle: Алгоритмы решения задачи
-author:
-  - Смирнов-Мальцев Е. Д.
-institute:
-  - Российский университет дружбы народов им. Патриса Лумумбу, Москва, Россия
-
-date: 20 мая 2023
-
-## i18n babel
-babel-lang: russian
-babel-otherlangs: english
-
-## Formatting pdf
-toc: false
-toc-title: Содержание
-slide_level: 2
-aspectratio: 169
-section-titles: true
-theme: metropolis
-header-includes:
- - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
- - '\makeatletter'
- - '\beamer@ignorenonframefalse'
- - '\makeatother'
 marp: true
+footer: 2023 г.
+paginate: true
 
-style: |
-  section h2 {
-    text-align: center;
-  }
+math: mathjax
+---
+
+<style>
+section{
+text-align: justify;
+font-size: 25px;
+}
+</style>
+
+# Доклад на тему
+
+# Научные статистические расчеты.
+# Программное обеспечение для реализации статистических расчётов.
 
 ---
 
-## Доклад на тему
+<style>
+section::after {
+content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+}
+</style>
 
-## Научные статистические расчеты.
-## Программное обеспечение для реализации статистических расчётов.
-
----
 
 ## Докладчик
 
@@ -183,7 +168,7 @@ pval: 0.40823
 
 # Выводы
 
-Мы научились считать основные статистические метрики и проводить проверку статистических гипотез.
+Статистические расчеты можно использовать для формулировки и проверки гипотез.
 
 ---
 
